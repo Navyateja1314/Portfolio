@@ -8,11 +8,13 @@
   <meta name="keywords" content="NAVYA TEJA">
   <meta name="author" content="">
   <title>NAVYATEJA PORTFOLIO</title>
-  <link rel="shortcut icon" href="signature.png" type="image/png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  
 
 </head>
 
@@ -64,9 +66,9 @@
              </div>
              
           <div class="d-flex gap-3 fs-2 pe-2 px-2">
-            <A href="https://www.linkedin.com/in/navyateja-bandameedi-509469269/" class="list-group-item"><i class="fa-brands fa-linkedin"></i></a>
-            <A href="https://www.instagram.com/navya_teja.b/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fonetap%2F%3F__coig_login%3D1" class="list-group-item"><i class="fa-brands fa-instagram"></i></a>
-            <A href="https://github.com/Navyateja1314" class="list-group-item"><i class="fa-brands fa-github"></i></a>
+            <A href="https://www.linkedin.com/in/navyateja-bandameedi-509469269/" class="list-group-item" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <A href="https://www.instagram.com/navya_teja.b/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fonetap%2F%3F__coig_login%3D1" target="_blank" class="list-group-item"><i class="fa-brands fa-instagram"></i></a>
+            <A href="https://github.com/Navyateja1314" class="list-group-item" target="_blank"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
         <div class="col-md-4 text-center" data-aos="fade-left">
@@ -165,14 +167,34 @@
       <h2 class="text-center mb-5" data-aos="fade-up">My Skills</h2>
       <div class="container-fluid d-flex flex-wrap gap-3 align-items-center justify-content-center display-5">
 
+        <div class="skilled">
+          <i class="fa-brands fa-java" data-aos="zoom-in"></i>
+          <p class="skill-name" >Core Java</p>
+        </div>
+       <div class="Skilled">
         <i class="fa-brands fa-html5" data-aos="zoom-in"></i>
+        <p class="skill-name" >HTML</p>
+       </div>
+       <div class="Skilled">
         <i class="fa-brands fa-css3" data-aos="zoom-in"></i>
+        <p class="skill-name" >CSS</p>
+       </div>
+       <div class="Skilled">
         <i class="fa-brands fa-js" data-aos="zoom-in"></i>
+        <p class="skill-name">Javascript</p>
+       </div>
+       <div class="Skilled">
         <i class="fa-brands fa-react js" data-aos="zoom-in"></i>
-        <i class="fa-brands fa-java" data-aos="zoom-in"></i>
-        <i class="fa-brands fa-spring" data-aos="zoom-in"></i>
-        <i class="fa-brands fa- Apis" data-aos="zoom-in"></i>
-
+        <p class="skill-name" >React js</p>
+       </div>
+       <div class="Skilled">
+        <i class="fa-brands fa-spring" data-aos="zoom-in"><p class="icon-name" >SB</p></i>
+        <p class="skill-name" >Spring boot</p>
+       </div>
+       <div class="Skilled">
+        <i class="fa-brands fa-apis" data-aos="zoom-in"><p class="icon-name" >APIs</p></i>
+        <p class="skill-name" >APIS</p>
+       </div>
       </div>
     </section>
     <section id="projects" class="py-5 my-5">
@@ -182,40 +204,43 @@
         <div class="row">
           <div class="col-lg-4 col-md-6">
             <div class="card" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-                <img src="https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2plY3R8ZW58MHx8MHx8fDA%3D" alt="project" class="card-img-top">
+                <img src="chat2.png" alt="project" class="card-img-top">
               <div class="card-body">
 
-                <h5 class="card-title">E-Commerce Website</h5>
-                <p class="card-text"></p>
-                <div class="d-flex gap-3 fs-4">
-                  <!-- <a href="" class="list-group-item"><i class="fa-brands fa-github"></i></a> -->
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-              <img src="https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2plY3R8ZW58MHx8MHx8fDA%3D" alt="project" class="card-img-top">
-              <div class="card-body">
                 <h5 class="card-title">Chat Application</h5>
-                <p class="card-text">Robot Pointing on a Wall Circle with gradienTic-Tac-Toe Web application USING
-                  HTML/CSS/JS</p>
+                <p class="card-text"> Developed a real-time chat application that enables seamless communication among users through instant messaging.
+                 Implemented features such as user authentication and group chat.Focused on security and privacy.
+                 </p>
+                 
                 <div class="d-flex gap-3 fs-4">
-                  <!-- <a href="https://github.com/KOLADIYAYASH/Tic-Tac-Toe-Web-application" class="list-group-item"><i class="fa-brands fa-github"></i></a> -->
+                <a href="https://github.com/Navyateja1314" class="list-group-item" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
             <div class="card" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-              <img src="https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2plY3R8ZW58MHx8MHx8fDA%3D" alt="project" class="card-img-top">
+              <img src="ems.png" alt="project" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">Employee Management System</h5>
-                <p class="card-text">"A versatile Unit Calculator that converts between Imperial and Metric units for
-                  length, weight, and volume. Features easy-to-use input fields, real-time conversion, and a dark mode
-                  toggle for a user-friendly experience."</p>
+                <p class="card-text">
+                  Engineered an employee management system that automates payroll processes, 
+                  reduced administrative errors and manages and manipulates employees data.
+                </p>
                 <div class="d-flex gap-3 fs-4">
-                  <!-- <a href="https://github.com/KOLADIYAYASH/UNIT_CALCULATER" class="list-group-item"> <i class="fa-brands fa-github"></i></a> -->
+                  <a href="https://github.com/Navyateja1314" class="list-group-item" target="_blank"><i class="fa-brands fa-github"></i></a> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="card" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+              <img src="ecomm.png" alt="project" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">E-Commerce Website</h5>
+                <p class="card-text">Currently working on it.</p>
+                <div class="d-flex gap-3 fs-4">
+                   <a href="https://github.com/Navyateja1314" class="list-group-item" target="_blank"> <i class="fa-brands fa-github"></i></a>
                 </div>
 
               </div>
@@ -232,17 +257,17 @@
       </div>
 
     </section>
-    <section id="contact" data-aos="fade-up">
+    <section id="contact"  data-aos="fade-up">
       <div class="container">
         <div class="row my-5 py-5">
           <div class="col-md-6 d-flex flex-column align-items-start justify-content-center">
             <h1 class="display-5 fw-bold mb-3">Contact Me</h1>
-            <p class="fs-5">Prefer email? Reach out to me at <i class="fa-solid envelope"></i> <a href="mailto:navyateja461@gmail.com" target="_blank">navyateja461@gmail.com</a></p>
+            <p class="fs-5">Prefer email? Reach out to me at <i class="fa-solid envelope"></i> <a href="mailto:navyatejabandameedi@gmail.com" target="_blank">navyateja461@gmail.com</a></p>
             <p class="fs-5"><i class="fa-solid fa-phone"></i>+91 9059350013</p>
           </div>
           <div class="col-md-6">
             <p class="fs-5">Send me a message</p>
-            <form action=other_page.php method=POST/GET>
+            <form method=POST  id="contact-form">
               <div class="form-floating mb-3">
                 <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
                 <label for="name">Your Name</label>
@@ -255,12 +280,12 @@
               </div>
 
               <div class="form-floating mb-3">
-                <textarea name="message" id="message" class="form-control" placeholder="Hello Ankit"></textarea>
+                <textarea name="message" id="message" class="form-control" placeholder="Hello"></textarea>
                 <label for="message">Your message</label>
-                <label for="message">Your message</label>
+                
               </div>
 
-              <button class="w-100 btn btn-lg btn-success" type="submit">Send <i class="fa-solid fa-paper-plane"></i></button>
+              <button class="w-100 btn btn-lg btn-success" type="submit" value="submit">Send <i class="fa-solid fa-paper-plane"></i></button>
 
             </form>
           </div>
@@ -279,7 +304,7 @@
   <script>
     AOS.init();
   </script>
-  <script>
+  <!-- <script>
     document.addEventListener("DOMContentLoaded", function() {
       // Initialize TypeIt
       new TypeIt("#typed-text", {
@@ -297,9 +322,9 @@
         .type("Student.") // Text to be typed
         .go(); // Start typing
     });
-  </script>
+  </script> -->
   <script src="react.js"></script>
-  <script src="other_page.php"></script>
+  <!-- s -->
 </body>
 
 </html>
