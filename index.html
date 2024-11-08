@@ -12,9 +12,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="react.js"></script>
 
-  
 
 </head>
 
@@ -257,7 +257,7 @@
       </div>
 
     </section>
-    <section id="contact"  data-aos="fade-up">
+    <section id="contact" data-aos="fade-up">
       <div class="container">
         <div class="row my-5 py-5">
           <div class="col-md-6 d-flex flex-column align-items-start justify-content-center">
@@ -266,32 +266,30 @@
             <p class="fs-5"><i class="fa-solid fa-phone"></i>+91 9059350013</p>
           </div>
           <div class="col-md-6">
-            <p class="fs-5">Send me a message</p>
-            <form method=POST  id="contact-form">
+            <p id="status" class="fs-5">Send me a message</p>
+            <form id="contactForm" class="form">
               <div class="form-floating mb-3">
-                <input type="text" class="form-control" name="name" id="name" placeholder="Your name">
+                <input type="text" class="form-control" name="to_name" id="name" placeholder="Your name">
                 <label for="name">Your Name</label>
               </div>
-
+    
               <div class="form-floating mb-3">
-
-                <input type="email" class="form-control" name="email" id="email" placeholder="name@example.com">
+                <input type="email" class="form-control" name="from_name" id="email" placeholder="name@example.com">
                 <label for="email">Your Email</label>
               </div>
-
+    
               <div class="form-floating mb-3">
                 <textarea name="message" id="message" class="form-control" placeholder="Hello"></textarea>
                 <label for="message">Your message</label>
-                
               </div>
-
-              <button class="w-100 btn btn-lg btn-success" type="submit" value="submit">Send <i class="fa-solid fa-paper-plane"></i></button>
-
+    
+              <button  onclick="sendEmail()" class="submit w-100 btn btn-lg btn-success ">Send <i class="fa-solid fa-paper-plane"></i></button>
             </form>
           </div>
         </div>
       </div>
     </section>
+    
   </main>
   <footer class="text-center">
     <p class="fs-10">Copyrights  <i class="fa fa-copyright" aria-hidden="true"></i> 2024 Navyateja.B, All Rights Reserved.</p>
@@ -304,27 +302,9 @@
   <script>
     AOS.init();
   </script>
-  <!-- <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      // Initialize TypeIt
-      new TypeIt("#typed-text", {
-          speed: 200,
-          waitUntilVisible: true,
-          loop: true
-        })
-        .type("web developer.")
-        .pause(200)
-        .delete(14)
-        .type("Freelancer.")
-        .delete(10)
-        .pause(200)
-        .delete(10)
-        .type("Student.") // Text to be typed
-        .go(); // Start typing
-    });
-  </script> -->
-  <script src="react.js"></script>
-  <!-- s -->
+  
+        
+  
 </body>
 
 </html>
